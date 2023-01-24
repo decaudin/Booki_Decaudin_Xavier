@@ -1,0 +1,408 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    max-width: 1400px;
+}
+
+.en_tete{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_booki{
+    margin-top: -4px;
+    margin-left: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+}
+
+.souris_bleu:hover{
+    color: #0065FC;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#ancre_activités{
+    margin-left: 70px;
+}
+
+.recherche_hébergement{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.fonction_rechercher{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    padding-left: 0;
+}
+
+.logo_rechercher{
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    height: 49px;
+    width: 3.8%;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.rechercher{
+    display: flex;
+    align-items: center;
+}
+
+.rechercher input{
+    width: 332px;
+    height: 44px;
+    color: black;
+    margin-left: -11px; 
+    border-color: #F2F2F2;
+}
+
+button{
+    height: 49px;
+    width: 132px;
+    background-color: #0065FC;
+    color: white;
+    border: 1px #0065FC solid;
+    border-radius: 0 15px 15px 0;
+    margin-left: -8px;
+
+}
+
+.champ{
+    height: 50px;
+    width: 160px;
+    color: #F2F2F2;
+}
+
+div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.filtre{
+    display: flex; 
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.logo{
+    margin-left: 60px;
+    width: 15.5%;
+    height: 70px;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 35px;
+}
+
+.logo:hover{
+    background-color: #DEEBFF; 
+    border-radius: 100px;
+}
+
+.logements_disponibles{
+    display: flex;
+    margin-top: 22px;
+    margin-left: 40px;
+}
+
+.cercle{
+    border: 3px solid #F2F2F2;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.logo_info{
+    color: #0065FC;
+    padding: 2px 20px;
+    display: block;
+    margin: auto;
+}
+
+.photos_Marseille{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.photo_hébergements{
+    margin-top: 35px;
+}
+
+.hébergements_à_Marseille{
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    margin-left: 100px;
+    margin-right: 35px;
+    padding: 28px;
+    padding-top: 8px;
+}
+
+#Hébergements_à_Marseille{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.hôtel_Marseille{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: -13px;
+}
+
+.hôtel_texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 124px;
+    width: 86.7%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgb(207, 207, 207);
+    background-color: white;
+    padding: 5px 9px 100px 4px;
+    margin-left: 23px;
+}
+
+.prix_hôtel{
+    margin-top: 0px;
+}
+
+.hôtel{
+    height: 124px;
+    width: 246px;
+    border-radius: 20px 20px 0 0;
+    margin-left: 2.5px;
+}
+
+.prix_note{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.etoiles{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.etoile_bleu{
+    color:#0065FC;
+}
+
+.etoile_grise{
+    color:#F2F2F2;
+}
+
+.afficher{
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+.les_plus_populaires{
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    margin-left: 0;
+    padding: 2%;
+}
+
+.titre_populaire{
+    margin-top: 10px;
+}
+
+.titre_et_logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo_chart_line{
+    color: #0065FC;
+    margin-top: 19px;
+}
+
+.populaires{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo_populaires{
+    height: 144px;
+    width: 137px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 5px;
+    
+}
+
+.commentaire_photo_populaire{
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+}
+
+.photo_et_commentaire{
+    height: 144px;
+    width: 63.4%;
+    padding: 5px 130px 5px 0px;
+    font-size: 12px;
+    border: white;
+    box-shadow: 3px 3px 8px rgb(207, 207, 207);
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.activités{
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.titre_activités{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#Activités_à_Marseille{
+    margin-left: 43px;
+}
+
+.ensemble_photo_texte{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.photo_texte{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 3px 3px 8px rgb(207, 207, 207);
+    border-radius: 20px;
+    
+}
+
+.photo_activités{
+    width: 302px;
+    height: 445px;
+    border-radius: 20px 20px 0 0;
+}
+
+.text_un{
+    margin-left: -165px;
+}
+
+.text_deux{
+    margin-left: -90px;
+}
+
+.text_quatre{
+    margin-left: -20px;
+}
+
+.footer{
+    background: #F2F2F2;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.ensemble_colonnes{ 
+    margin-left: -100px;
+}
+
+.colonne_footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.sous_titre_footer{
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+
+ul{
+    white-space: nowrap;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 0;
+    
+}
+
+li{
+    margin-top: 14px;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    .photo_hébergements{
+        display: flex;
+        flex-direction: column;
+    } 
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    .populaires{
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    .photo_et_commentaire{
+        width: 122px;
+        height: 144px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    .commentaire_photo_populaire{
+        margin-top: -15px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    .les_plus_populaires{
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 30px;
+    }
+}
+
+
+
+
+@media all (max-width: 768px){
+    .en_tete{
+        display: flex;
+    }
+}
+
+
+
+

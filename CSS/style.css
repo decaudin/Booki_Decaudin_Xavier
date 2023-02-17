@@ -1,57 +1,31 @@
+html {
+    overflow-x: hidden;
+}
+
 #page {
-    max-width: 1400px;
+    max-width: 1400px;  
     margin: auto;
+    width: 94%;
 }
 
 * {
     font-family: 'Raleway', sans-serif;
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 25px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 16px;
-}
-
 
 /* En-tête */
 
-
-logo {
-    margin-left: 20px;
-    width: 15.5%;
-    height: 70px;
-}
-
-img {
-    object-fit: cover;
-}
-
-/* Barre de navigation */
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 15.5%;
+    height: 70px;
 }
 
 header img {
@@ -59,22 +33,35 @@ header img {
     height: 60px;
 }
 
+
+/* Barre de navigation */
+
+
 header nav {
-    margin-right: 50px;
+    margin-right: 10px;
 }
+
 
 header nav ul {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: -30px;
 }
 
 header nav ul li {
-    min-width: 200px;
-    padding: 40px 50px;
-    margin-right: -125px;
+    /*min-width: 200px;*/
+    padding: 40px 5px;
+    /*margin-right: -121px;*/
+    margin-right: -4px;
     border-top: 3px solid #0065FC;
     border-color: transparent;
     font-size: 20px;
     text-align: center;
+    width: 172px;
+    display: flex;
+    justify-content: space-around;
 }
 
 header nav ul li:hover,
@@ -88,13 +75,22 @@ header nav ul li.active a {
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 
 /* Barre de recherche */
 
 
 .home {
     height: auto;
-    margin: 20px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .barre_recherche form {
@@ -144,19 +140,6 @@ header nav ul li.active a {
     display: none;
 }
 
-.fonction_rechercher {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 25px;
-    padding-left: 0;
-}
-
-.champ {
-    height: 50px;
-    width: 160px;
-    color: #F2F2F2;
-}
-
 
 /* Filtres */
 
@@ -167,60 +150,51 @@ header nav ul li.active a {
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0 10px 0;
+    width: 100%;
 }
 
-.filtres i {
-    font-size: 18px;
-    margin-right: 10px;
-    background-color: #0065FC;
-    position: relative;
-    border-radius: 5px;
+.filtres h2{
+    font-size: 20px;
 }
 
+.liste_filtres {
+    width: 82%;
+    margin-left: -48px;
+}
 
 .filtres ul {
     display: flex;
     justify-content: space-evenly;
-    width: 75%;
+    width: 100%;
     height: auto;
-    margin: 15px 0 10px -100px;
+    margin: 15px 0 10px 0px;
 }
 
 .filtres ul li {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    font-size: 80%;
     border: solid 2px #ddd;
     border-radius: 20px;
     box-sizing: content-box;
     height: 42px;
     width: auto;
     padding-right: 20px;
+    padding-left: 20px;
 }
 
-
-.filtres ul li i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    width: 5px;
-    height: 5px;
+.filtres i {
+    font-size: 18px;
     margin-right: 10px;
-    border-radius: 30px;
-    padding: 22px;
-    right: 5px;
+    color: #0065FC;
+    position: relative;
+    border-radius: 5px;
 }
 
 .filtres ul li:hover {
     cursor: pointer;
     background-color: #DEEBFF;
-}
-
-
-.filtres ul li:hover i {
-    background-color: #0065FC;
-    color: #DEEBFF;
 }
 
 
@@ -230,7 +204,7 @@ header nav ul li.active a {
 .info {
     display: flex;
     align-items: center;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 -15px 0;
 }
 
 .info i {
@@ -248,97 +222,93 @@ header nav ul li.active a {
     margin-right: 15px;
 }
 
-.logements_disponibles {
-    display: flex;
-    margin-top: 22px;
-    margin-left: 40px;
-}
 
-.cercle {
-    border: 3px solid #F2F2F2;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.logo_info {
-    color: #0065FC;
-    padding: 2px 20px;
-    margin-top: 9px;
-}
-
-
-/* Bloc hébergement Marseille */
+/* Bloc principal */
 
 
 .photos_Marseille {
     display: flex;
     flex-direction: column;
-    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
 }
 
-.photo_hébergements {
-    margin-top: 35px;
-    width: 90%;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    justify-content: space-around;
+.lien_carte {
+    width: 100%;
+    height: 100%;
 }
+
+
+/* Bloc hébergement + populaire */
+
+
+.photo_hébergements {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    width: 100%;
+}
+
+
+/* Bloc hébergement */
+
 
 .hébergements_à_Marseille {
     border-radius: 10px;
     background-color: #F2F2F2;
-    margin-left: 5em;
     padding-top: 8px;
-    width: 70%;
-    padding: 1.5%;
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 #lodging {
-    margin-top: 30px;
-    margin-left: 0.5em;
+    margin-top: 10px;
+    margin-left: 30px;
+
 }
 
 .hôtel_Marseille {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    margin-left: -13px;
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .hôtel_texte {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 124px;
-    max-width: 14.7em;
+    height: 199px;
+    width: 28%;
     border-radius: 20px;
     box-shadow: 3px 3px 8px rgb(207, 207, 207);
     background-color: white;
-    padding: 5px 9px 100px 4px;
-    margin-left: 23px;
-    object-fit: cover;
-}
-
-.prix_hôtel {
-    margin-top: 0px;
+    padding: 5px 9px 0px 4px;
 }
 
 .hôtel {
-    height: 124px;
-    width: 235px;
-    /*width: 95%;*/
+    height: 63%;
+    width: 100%;
     border-radius: 20px 20px 0 0;
     margin-left: 2.5px;
     object-fit: cover;
 }
 
 .prix_note {
-    display: flex;
-    flex-direction: column;
     font-size: 12px;
     margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -12px;
+}
+
+.prix_note h3 {
+    font-size: 14px;
+}
+
+.prix_hôtel {
+    margin-top: -9px;
 }
 
 .etoiles {
@@ -358,8 +328,8 @@ header nav ul li.active a {
 .afficher {
     font-weight: bold;
     font-size: larger;
-    margin-top: 35px;
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-bottom: 25px;
 }
 
 
@@ -369,75 +339,76 @@ header nav ul li.active a {
 .les_plus_populaires {
     border-radius: 10px;
     background-color: #F2F2F2;
-    min-width: 30%;
-    padding: 3%;
-    margin-left: 3%;
-}
-
-.titre_populaire {
-    margin-top: 10px;
-    margin-left: 0.5em;
+    width: 32%; 
+    display: flex;
+    flex-direction: column;
 }
 
 .titre_et_logo {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 90%;
 }
 
 #logo_chart_line {
     color: #0065FC;
-    margin-top: 19px;
-    margin-right: 0.1em;
 }
 
 .populaires {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.photo_et_commentaire {
+    height: 144px;
+    width: 80%;
+    padding: 6px 0 6px 6px;
+    font-size: 12px;
+    box-shadow: 3px 3px 8px rgb(207, 207, 207);
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.lien_carte_populaire {
+    display: flex;
 }
 
 .photo_populaires {
-    height: 144px;
-    width: 137px;
+    height: 100%;
+    width: 45%;
     border-radius: 20px 0px 0px 20px;
-    margin-left: 5px;
-}
-
-.photo_populaires_verticale {
-    height: 144px;
-    width: 310px;
-    border-radius: 20px 0px 0px 20px;
-    margin-left: 5px;
+    object-fit: cover;
 }
 
 .commentaire_photo_populaire {
     display: flex;
     flex-direction: column;
-    width: 190px;
-    flex-wrap: nowrap;
+    width: 48%;
     padding-left: 10px;
     justify-content: space-around;
 }
 
 .commentaire_photo_populaire h3 {
-    font-size: 15px;
-    margin-bottom: -5px;
-    margin-top: 0;
+    font-size: 14px;
+    margin-bottom: -56px;
+    margin-top: -16px;
+    width: 90%;
 }
 
-.photo_et_commentaire {
-    height: 144px;
-    max-width: 63.4%;
-    padding: 5px 130px 5px 0px;
-    font-size: 12px;
-    border: white;
-    box-shadow: 3px 3px 8px rgb(207, 207, 207);
-    border-radius: 20px;
-    background-color: white;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 1em;
+.commentaire_photo_populaire p {
+    margin-top: 24px;
+}
+
+.commentaire_photo_populaire .etoiles {
+    margin-bottom: -15px;
 }
 
 
@@ -449,27 +420,20 @@ header nav ul li.active a {
     flex-direction: column;
     margin-top: 33px;
     width: 100%;
-    margin: auto;
-}
-
-.titre_activités {
-    display: flex;
-    justify-content: flex-start;
 }
 
 #activities {
-    margin-left: 13px;
     margin-top: 50px;
     margin-bottom: 5px;
 }
 
 .ensemble_photo_texte {
     display: flex;
-    align-items: flex-start;
-    margin-left: -40px;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
-    max-width: 100%;
+    width: 100%;
 }
 
 .photo_texte {
@@ -478,46 +442,25 @@ header nav ul li.active a {
     background-color: white;
     box-shadow: 3px 3px 8px rgb(207, 207, 207);
     border-radius: 20px;
-    max-width: 100em;
-    margin-left: 50px;
+    width: 23%;
+    height: 445px;
 }
 
-.photo_texte_vertical {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 3px 3px 8px rgb(207, 207, 207);
-    border-radius: 20px;
-    max-width: 100em;
-    margin-left: 50px;
+.photo_texte h3 {
+    margin-top: 5px;
+    
 }
 
 .photo_activités {
-    width: 302px;
-    height: 445px;
+    width: 100%;
+    height: 88%;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
-.photo_activités_verticale {
-    width: 302px;
-    height: 445px;
-    border-radius: 20px 20px 0 0;
-}
-
-.photo_activités_parc{
-    max-width: 302px;
-    height: 445px;
-    border-radius: 20px 20px 0 0;
-}
-
-.photo_activités_lagarde{
-    max-width: 302px;
-    height: 445px;
-    border-radius: 20px 20px 0 0;
-}
-
-.text{
-    padding-left: 20px;
+.text {
+    width: 90%;
+    margin-left: 15px;
 }
 
 
@@ -526,6 +469,7 @@ header nav ul li.active a {
 
 .footer {
     margin: 0 auto;
+    width: 94%;
     background: #F2F2F2;
     margin-top: 60px;
     display: flex;
@@ -561,50 +505,43 @@ footer li {
 
 
 
-@media screen and (max-width: 991px) and (min-width: 767px) {
-
-
-    #page {
-        border: red solid 1px;
-        margin-left: 10%;
-        /*margin: 0 30px;*/
-    }
-
-
-    /* En-tête */
-
-    .logo {
-        margin-left: 20px;
-    }
-
-    header nav {
-        margin-right: 0px;
-    }
-
-    .barre_recherche {
-        margin-left: -450px;
-    }
-
-    .barre_recherche form {
-        justify-content: center;
-    }
+@media screen and (max-width: 992px) {
 
 
     /* Filtres */
 
+    .filtres {
+        width: 100%;
+    }
+
+    .liste_filtres {
+        width: 92%;
+        margin-left: -9px;
+    }
 
     .filtres ul {
-        margin-left: -40px;
+        margin-left: -30px;
+        height: auto;
     }
 
     .filtres ul li {
-        max-width: 85%;
-        margin-left: 30px;
-       
+        margin-left: 13px;  
+    }
+
+
+    /* Bloc principal */
+
+
+    .photos_Marseille {
+        width: 100%;
     }
 
 
     /* Bloc hébergement + populaire */
+
+    #lodging {
+        margin-top: 27px;
+    }
 
 
     .photo_hébergements {
@@ -613,23 +550,35 @@ footer li {
         width: 100%;
     } 
 
+
+    /* Bloc hébergement */
+
+
     .hébergements_à_Marseille {
-        width: 93%;
-        margin-left: auto;
-        margin-right: 33px;
+        width: 100%;
+        height: 666px;
     }
+    .hôtel_Marseille {
+        margin-bottom: 19px;
+    }
+
+    .afficher {
+        margin-bottom: 43px;
+    }
+
+
+    /* Bloc populaire */
+
 
     .les_plus_populaires {
         margin-top: 50px;
-        margin-bottom: 25px;
-        margin-left: 5px;
-        width: 92%;
+        width: 100%;
     }
 
     .titre_populaire {
-        margin-left: 10px;
+        margin-left: -15px;
     }
-
+    
     #logo_chart_line {
         margin-top: 13px;
         margin-right: 10px;
@@ -638,30 +587,19 @@ footer li {
     .populaires {
         display: flex;
         flex-direction: row;
-        margin-left: -15px;
-    }
-
-    .photo_populaires_verticale {
-        height: 144px;
-        width: 310px;
-        border-radius: 20px 0px 0px 20px;
-        margin-left: 5px;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .photo_et_commentaire {
-        width: 10em;
-        height: 144px;
-        margin: 15px;
-        margin-left: 14px;
+        width: 30%; 
     }
 
     .commentaire_photo_populaire {
-        margin-top: -15px;
+        margin-top: -27px;
     }
 
     .commentaire_photo_populaire h3 {
-        font-size: 15px;
-        margin-bottom: 5px;
         margin-top: 10px;
     }
 
@@ -669,62 +607,47 @@ footer li {
     /* Activités */
 
 
-    #activities {
-        margin-left: 30px;
+    .activités {
+        width: 100%;
     }
 
     .ensemble_photo_texte {
-            max-width: 100%;
-            margin-left: 3px;
-            margin-top: 40px;
-            margin-bottom: 80px;
-        }
-    
-    .photo_texte_vertical {
-            max-width: 12em;
-            max-height: 250px;
-            margin-top: -25px;
-            margin-left: 30px;
-            background-color: white;
-            box-shadow: 3px 3px 8px rgb(207, 207, 207);
-            border-radius: 20px;
-            padding-bottom: 0px;
-        }
-    
-    .photo_texte {
-            max-width: 12em;
-            max-height: 200px;
-            margin-top: -25px;
-            margin-left: 30px;
-            background-color: white;
-            box-shadow: 3px 3px 8px rgb(207, 207, 207);
-            border-radius: 20px;
-        }
-
-    .photo_activités {
-            max-width: 192px;
-
+        width: 100%;
+        margin-top: 55px;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
     }
     
-    .photo_activités_verticale {
-             max-width: 192px;
-             height: 148.5px;
-             border-radius: 20px 20px 0 0;
-        }
+    .photo_texte {
+        width: 23%;
+        height: 280px;
+        margin-top: -25px;
+        background-color: white;
+        box-shadow: 3px 3px 8px rgb(207, 207, 207);
+        border-radius: 20px;
+    }
+
+    .photo_activités {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .photo_texte h3 {
+        margin-top: 0;
+    }
     
-    .photo_activités_parc {
-            max-width: 192px;   
-            height: 300px;
-        }
-    
-    .photo_activités_lagarde {
-            max-width: 192px;
-        }
 
         /*  FOOTER  */
 
+
     .footer {
-            margin-top: -20px;
+        margin-top: -20px;
+    }
+
+    .colonne_footer {
+        margin-left: 15%;
     }
 
 }
@@ -732,7 +655,7 @@ footer li {
 /*------------------------ Smartphone -------------------------*/
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   
 
     #page {
@@ -744,7 +667,7 @@ footer li {
     /* En-tête */
 
 
-    .logo{
+    .logo {
         margin: auto;
     }
 
@@ -758,16 +681,26 @@ footer li {
 
     header nav {
         margin-right: 0px;
+        width: 100%;
     }
 
-    header nav ul li {
-        padding: 10px 87px;
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
-        border-color: transparent;
+    header nav ul {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
+
+    header nav ul li {
+        padding: 10px 0px;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        border-color: transparent;
+        width: 50%;
+    }
+
+    header nav ul li a {
+        width: 50%;
+    };
 
 
     /* Barre de recherche */
@@ -778,8 +711,14 @@ footer li {
         margin: 20px;
     }
 
-    .barre_recherche form {
-        justify-content: center;
+    .barre_recherche { 
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .recherche_desktop {
+        width: 81%;
     }
 
     .recherche_submit {
@@ -800,242 +739,147 @@ footer li {
 
     .filtres {
         flex-direction: column; 
-    
+        width: 100%;
+    }
+
+    .liste_filtres {
+        width: 112%;
+        margin-left: 29px;
     }
 
     .filtres ul {
-        /*flex-wrap: wrap;*/
-        width: 70%;
-        height: 200px;
-        justify-content: left;
-        margin-bottom: -130px;
+        width: 86%;
+        height: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -35px;
+        margin-bottom: 39px;
     }
 
     .filtres ul li {
         display: flex;
-        justify-content: space-around;
+        justify-content: start;
+        margin-right: 27px;
+        margin-left: -23px;
+        width: 33%;
+        font-size: 58%;
+        padding-left: 11px;
+        margin-bottom: 13px;
     }
 
 
     /* Bloc hébergement + populaire */
 
 
-    .les_plus_populaires{
-        margin-left: 2px;
-        width: 100%;
-        border-radius: 0%;        
-    }
-
-    .photo_populaires_verticale {
-        height: 144px;
-        width: 230px;
-        border-radius: 20px 0px 0px 20px;
-        margin-left: 5px;
-    }
-
     .photo_hébergements {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .hébergements_à_Marseille {
-        background-color: white;
-        width: 97%;
-        margin-left: -5px;
-    }
 
-    .hôtel_Marseille {
-        display: flex;
-        flex-direction: column;   
-        margin: auto;
-    }
-
-    .hôtel_texte {
-        margin-bottom: 30px;
-        padding-right: 162px;
-        width:100%;
-        margin-left: 15px;
-    }
-
-    .hôtel {
-        width: 400px;
-    }
-
-    .afficher {
-        display: none;
-    }
+    /* Bloc populaire */
 
 
-    /* Activités */
-
-
-    #activities {
-        margin-bottom: 20px;
-        margin-left: 30px;
-    }
-
-    .ensemble_photo_texte {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-    }
-
-    .photo_texte, .photo_texte_vertical {
-        margin-bottom: 30px;
-    }
-
-    .photo_texte, .photo_texte_vertical{
-        width: 420px;
-        margin-left: -440px;
-    }
-
-    .photo_activités, .photo_activités_verticale, .photo_activités_parc, .photo_activités_lagarde {
-        min-width: 420px;
-        height: 190px;
-    }
-   
-
-    /* FOOTER */
-
-
-    .footer{
-        min-width: 100%;
-        margin-top: 50px;
-    }
-
-    .ensemble_colonnes{
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-    }
-}
-@media screen and (max-width: 767px) {
-  
-
-    #page {
-        margin: 0px;
+    .les_plus_populaires {
+        margin-left: 2px;
         width: 100%;
+        height: 685px;
+        border-radius: 0%;
+        margin-top: -14px;
     }
 
-
-    /* En-tête */
-
-
-    .logo{
-        margin: auto;
+    .titre_et_logo {
+        margin-top: 15px;
+        margin-bottom: 11px;
     }
 
-
-    /* Barre de navigation */
-
-
-    header {
-        flex-direction: column;
+    .titre_populaire {
+        margin-left: 0;
     }
 
-    header nav {
-        margin-right: 0px;
-    }
-
-    header nav ul li {
-        padding: 10px 87px;
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
-        border-color: transparent;
+    .populaires {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 83px;
+    }
+
+    .photo_et_commentaire {
+        width: 90%;
+        height: 144px;
+        margin-top: 10px;
+    }
+
+    .photo_populaires {
+        height: 100%;
+        width: 40%;
+    }
+
+    .commentaire_photo_populaire h3 {
+        font-size: 15px;
+        margin-top: 14px;
+    }
+
+    .commentaire_photo_populaire p {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+
+    .commentaire_photo_populaire .etoiles {
+        margin-bottom: 32px;
+    }
+
+    .commentaire_photo_populaire {
+        font-size: 13px;
+        margin-bottom: -43px;
+        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
-    /* Barre de recherche */
-
-
-    .home {
-        height: auto;
-        margin: 20px;
-    }
-
-    .barre_recherche form {
-        justify-content: center;
-    }
-
-    .recherche_submit {
-        width: 60px;
-    }
-
-    .hide_mobile {
-        display: none;
-    }
-
-    .only_mobile {
-        display: inherit;
-    }
-
-
-    /* Filtres */
-
-
-    .filtres {
-        flex-direction: column; 
+    /* Bloc hébergement */ 
     
-    }
-
-    .filtres ul {
-        /*flex-wrap: wrap;*/
-        width: 70%;
-        height: 200px;
-        justify-content: left;
-        margin-bottom: -130px;
-    }
-
-    ..filtres ul li {
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-    /* Bloc hébergement + populaire */
-
-
-    .les_plus_populaires{
-        margin-left: 2px;
-        width: 100%;
-        border-radius: 0%;        
-    }
-
-    .photo_populaires_verticale {
-        height: 144px;
-        width: 230px;
-        border-radius: 20px 0px 0px 20px;
-        margin-left: 5px;
-    }
-
-    .photo_hébergements {
-        display: flex;
-        flex-direction: column-reverse;
-    }
 
     .hébergements_à_Marseille {
         background-color: white;
-        width: 97%;
-        margin-left: -5px;
+        width: 100%;
+        height: 1786px;
+    }
+
+    #lodging {
+        margin-bottom: 25px;
     }
 
     .hôtel_Marseille {
         display: flex;
         flex-direction: column;   
-        margin: auto;
+        width: 100%;
+        margin-bottom: 0;
     }
 
     .hôtel_texte {
+        width: 90%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 30px;
-        padding-right: 162px;
-        width:100%;
-        margin-left: 15px;
     }
 
     .hôtel {
-        width: 400px;
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+    }
+
+    .hôtel_texte h3 {
+        font-size: 17px;
+        margin-top: 7px;
+    }
+
+    .prix_note {
+        margin-top: 0;
+        font-size: 14px;
     }
 
     .afficher {
@@ -1047,40 +891,43 @@ footer li {
 
 
     #activities {
-        margin-bottom: 20px;
-        margin-left: 30px;
+        margin-bottom: -25px;
+        margin-left: 37px;
+        width: 130px;
     }
 
     .ensemble_photo_texte {
+        height: 1100px;
         display: flex;
         flex-direction: column;
         margin-left: auto;
+        margin-bottom: 5px;
     }
 
-    .photo_texte, .photo_texte_vertical {
+    .photo_texte {
         margin-bottom: 30px;
+        width: 92%;
+        height: 250px;
+    }
+        
+    .photo_activités {
+        height: 75%;
     }
 
-    .photo_texte, .photo_texte_vertical{
-        width: 420px;
-        margin-left: -440px;
-    }
-
-    .photo_activités, .photo_activités_verticale, .photo_activités_parc, .photo_activités_lagarde {
-        min-width: 420px;
-        height: 190px;
+    .text {
+        margin-top: 12px;
     }
    
 
     /* FOOTER */
 
 
-    .footer{
-        min-width: 100%;
+    .footer {
+        width: 100%;
         margin-top: 50px;
     }
 
-    .ensemble_colonnes{
+    .ensemble_colonnes {
         display: flex;
         flex-direction: column;
         margin-left: 20px;

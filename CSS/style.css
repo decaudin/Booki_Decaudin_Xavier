@@ -23,13 +23,7 @@ header {
     width: 100%;
 }
 
-.logo {
-    width: 15.5%;
-    height: 70px;
-}
-
 header img {
-    width: auto;
     height: 60px;
 }
 
@@ -41,7 +35,6 @@ header nav {
     margin-right: 10px;
 }
 
-
 header nav ul {
     display: flex;
     list-style: none;
@@ -51,9 +44,7 @@ header nav ul {
 }
 
 header nav ul li {
-    /*min-width: 200px;*/
     padding: 40px 5px;
-    /*margin-right: -121px;*/
     margin-right: -4px;
     border-top: 3px solid #0065FC;
     border-color: transparent;
@@ -83,10 +74,6 @@ a {
 
 /* Barre de recherche */
 
-
-.home {
-    height: auto;
-}
 
 h1 {
     font-weight: 700;
@@ -146,7 +133,7 @@ h1 {
 
 .filtres {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0 10px 0;
@@ -231,11 +218,6 @@ h1 {
     flex-direction: column;
     margin-top: 10px;
     width: 100%;
-}
-
-.lien_carte {
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -379,6 +361,7 @@ h1 {
 
 .lien_carte_populaire {
     display: flex;
+    width: 100%;
 }
 
 .photo_populaires {
@@ -446,6 +429,11 @@ h1 {
     height: 445px;
 }
 
+.lien_carte {
+    width: 100%;
+    height: 100%;
+}
+
 .photo_texte h3 {
     margin-top: 5px;
     
@@ -457,6 +445,8 @@ h1 {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
+
+
 
 .text {
     width: 90%;
@@ -472,8 +462,6 @@ h1 {
     width: 94%;
     background: #F2F2F2;
     margin-top: 60px;
-    display: flex;
-    flex-direction: column;
 }
 
 .ensemble_colonnes { 
@@ -510,9 +498,6 @@ footer li {
 
     /* Filtres */
 
-    .filtres {
-        width: 100%;
-    }
 
     .liste_filtres {
         width: 92%;
@@ -529,15 +514,8 @@ footer li {
     }
 
 
-    /* Bloc principal */
-
-
-    .photos_Marseille {
-        width: 100%;
-    }
-
-
     /* Bloc hébergement + populaire */
+
 
     #lodging {
         margin-top: 27px;
@@ -545,9 +523,7 @@ footer li {
 
 
     .photo_hébergements {
-        display: flex;
         flex-direction: column;
-        width: 100%;
     } 
 
 
@@ -585,7 +561,6 @@ footer li {
     }
 
     .populaires {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
@@ -607,31 +582,18 @@ footer li {
     /* Activités */
 
 
-    .activités {
-        width: 100%;
-    }
-
     .ensemble_photo_texte {
-        width: 100%;
         margin-top: 55px;
         margin-bottom: 80px;
-        display: flex;
-        justify-content: space-between;
     }
     
     .photo_texte {
-        width: 23%;
         height: 280px;
         margin-top: -25px;
-        background-color: white;
-        box-shadow: 3px 3px 8px rgb(207, 207, 207);
-        border-radius: 20px;
     }
 
     .photo_activités {
-        width: 100%;
         height: 230px;
-        object-fit: cover;
     }
 
     .photo_texte h3 {
@@ -663,12 +625,11 @@ footer li {
         width: 100%;
     }
 
-
     /* En-tête */
 
 
     .logo {
-        margin: auto;
+        margin-bottom: 7px;
     }
 
 
@@ -686,7 +647,6 @@ footer li {
 
     header nav ul {
         width: 100%;
-        display: flex;
         justify-content: space-between;
     }
 
@@ -697,10 +657,6 @@ footer li {
         border-color: transparent;
         width: 50%;
     }
-
-    header nav ul li a {
-        width: 50%;
-    };
 
 
     /* Barre de recherche */
@@ -738,8 +694,8 @@ footer li {
 
 
     .filtres {
+        align-items: baseline;
         flex-direction: column; 
-        width: 100%;
     }
 
     .liste_filtres {
@@ -750,14 +706,12 @@ footer li {
     .filtres ul {
         width: 86%;
         height: 65px;
-        display: flex;
         flex-wrap: wrap;
         margin-left: -35px;
         margin-bottom: 39px;
     }
 
     .filtres ul li {
-        display: flex;
         justify-content: start;
         margin-right: 27px;
         margin-left: -23px;
@@ -772,7 +726,6 @@ footer li {
 
 
     .photo_hébergements {
-        display: flex;
         flex-direction: column-reverse;
     }
 
@@ -782,7 +735,6 @@ footer li {
 
     .les_plus_populaires {
         margin-left: 2px;
-        width: 100%;
         height: 685px;
         border-radius: 0%;
         margin-top: -14px;
@@ -798,19 +750,16 @@ footer li {
     }
 
     .populaires {
-        display: flex;
         flex-direction: column;
         margin-bottom: 83px;
     }
 
     .photo_et_commentaire {
         width: 90%;
-        height: 144px;
         margin-top: 10px;
     }
 
     .photo_populaires {
-        height: 100%;
         width: 40%;
     }
 
@@ -842,7 +791,6 @@ footer li {
 
     .hébergements_à_Marseille {
         background-color: white;
-        width: 100%;
         height: 1786px;
     }
 
@@ -851,9 +799,7 @@ footer li {
     }
 
     .hôtel_Marseille {
-        display: flex;
         flex-direction: column;   
-        width: 100%;
         margin-bottom: 0;
     }
 
@@ -866,7 +812,6 @@ footer li {
     }
 
     .hôtel {
-        width: 100%;
         height: 60%;
         display: flex;
         align-items: center;
@@ -898,7 +843,6 @@ footer li {
 
     .ensemble_photo_texte {
         height: 1100px;
-        display: flex;
         flex-direction: column;
         margin-left: auto;
         margin-bottom: 5px;
@@ -928,8 +872,11 @@ footer li {
     }
 
     .ensemble_colonnes {
-        display: flex;
         flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .colonne_footer {
         margin-left: 20px;
     }
 }
